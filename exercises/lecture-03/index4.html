@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lesson 3 challenges</title>
+    <link rel="shortcut icon" href="./favicon.ico" type="image/x-icon">
+
+    <!-- Додайте тут елеиент style: -->
+    <style type="text/css">
+        /* Чи буде змінна --bgColor видимою для елемента body. Яким буде фон елемента body і чому. */
+        /* ВІДПОВІДЬ: Зміна не буде видною для елементу body, так як вона визначена тільки для елементів типу div. 
+            Фон body буде мати значення заумовчанням, тобто білий.
+        */
+        body {
+            background: var(--bgColor);
+        }
+
+        div {
+            --bgColor: limegreen;
+        }
+
+
+        /*
+        визначте для елементів p властивість фону таким чином:
+        background: var(--bgColor);
+        */
+
+        p {
+            background: var(--bgColor);    
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- ... -->
+
+    <!-- Додайте тут 2 елеиенти div: -->
+    <div>
+        <h3>Div 1</h3>
+        <p>Paragraph 1</p>
+    </div>
+
+    <div>
+        <h3>Div 2</h3>
+        <p>Paragraph 2</p>
+    </div>
+
+    
+
+</body>
+</html>

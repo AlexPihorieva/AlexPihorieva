@@ -1,0 +1,15 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+  
+/* more styles */
+@import url("common.css");
+
+
+
+
+body {
+    color: var(--primary-text-color);
+    background: var(--primary-bg-color);
+}
