@@ -1,0 +1,119 @@
+h1, h2, h3 {
+    color: grey;
+  }
+  
+  
+
+  #main {
+    color: #e60202;
+  }
+
+  .h2 {
+    color: red;
+  }
+
+  .heading {
+    color: green
+  }
+
+  ul>li {
+    font-weight: bold
+  }
+
+
+    /*Чи зміниться колір тексту p всередині елемента div
+    Відповідь. Ні, тому що вказуємо тільки дочірній елемент p*/
+    section > p {
+    color: red;
+   }
+
+   section p {
+    font-size: 30px;
+   }
+
+   body > h2:first-of-type { 
+    color: indigo; 
+}
+
+
+/*- застосувати до всіх посилань, нащадкам p.first властивість color: green*/
+    p.first a {
+    color: green;
+}
+
+
+/*стилізувати посилання з властивістю color: green, що розташовані всередині будь-якого тегу з класом .first, що є нащадком елементу p
+    p .first a {
+    color: green;
+*/
+
+div ~ p {
+    color: salmon;
+}
+
+
+/*
+Маємо іменовані кольори black, blue, green, red, white, yellow
+
+визначати ці кольори за допомогою шістнадцяткового коду: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E, F.
+визначати ці кольори у десятковій системі числення за допомогою функції RGB.
+визначати ці кольори, використовуючи відсотки.
+визначати ці кольори використовуючи альфа-канал, що задає прозорість.
+*/
+
+.black {    
+    color: #000000;
+    color: rgb(0, 0, 0);
+    color: hsl(0, 0%, 0%);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.blue {
+    color: #0000ff;
+    color: rgb(0, 0, 255);
+    color: hsl(240, 100%, 50%);
+    color: rgba(0, 0, 255, 0.5);
+}
+
+.green {
+    color: #008000;
+    color: rgb(0, 128, 0);
+    color: hsl(120, 100%, 25%);
+    color: rgba(0, 128, 0, 0.5);
+}
+
+.red {
+    color: #ff0000;
+    color: rgb(255, 0, 0);
+    color: hsl(0, 100%, 50%);
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.white {
+    color: #ffffff;
+    color: rgb(255, 255, 255);
+    color: hsl(0, 0%, 100%);
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.yellow {
+    color: #ffff00;
+    color: rgb(255, 255, 0);
+    color: hsl(60, 100%, 50%);
+    color: rgba(255, 255, 0, 0.5);
+}
+
+.translucent-box{
+    background-color: hsl(0, 100%, 50%);
+    height: 10px;
+}
+
+body {
+    font-size: 140%;
+}
+
+h1{
+    font-size: 240%;
+}
+
+
