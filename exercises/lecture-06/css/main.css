@@ -1,0 +1,81 @@
+a {
+    color: indigo;
+}
+
+a:visited{
+    color: gold;
+}
+
+a:hover{
+    color: salmon;
+}
+
+a:active {
+    color: red;
+}
+
+a:focus{
+    color: orange;
+}
+
+input:in-range{
+    background-color:rgba(0, 128, 0, 0.25) ;
+}
+
+input:not(:in-range){
+    background-color:rgba(255, 0, 0, 0.25) ;
+
+}
+
+.list :first-of-type{
+    color: orange;
+}
+
+.list2 :first-child{
+    color: orange;
+}
+
+.list3 :last-of-type{
+    color: orange;
+}
+
+.list4 li:not(.first-item){
+    color: orange;
+}
+
+.list4 li:not(.first-item):not(:last-of-type) {
+    background: yellow;
+    color: black;
+    }
+
+
+.list5 li:nth-child(2){
+    color: orange;
+}
+
+.list5 li:nth-child(2n){
+    color: orange;
+}
+
+.list5 li:nth-child(2n+6){
+    color: orange;
+}
+   
+h1.ua::before{
+    content: "Слава ";
+}
+
+h1.hero::after{
+    content: " Слава";
+}
+
+p::before {
+    content: "\0A7";
+}
+
+:root {
+    --primary-text-color: #000;
+    --primary-bg-color: #fff;
+    --primary-font-family: 'Roboto', sans-serif; 
+    --primary-font-size: 0.875rem;
+}
