@@ -1,0 +1,33 @@
+.negative {
+    background: linear-gradient(to left, 
+        #ADD8E6 -50%,    
+        #4682B4 -10%,    
+        #4682B4 0%,      
+        #4682B4 100%,    
+        #1E90FF 150%     
+    );
+}
+
+.percents {
+    background: linear-gradient(to bottom,
+        #98FB98 2em,    
+        #32CD32 4em,     
+        #228B22 8em,     
+        #008000 16em,    
+        #006400 32em,    
+        #004D00 64em,    
+        #003300 128em    
+    );
+}
+
+.radial {
+    background: radial-gradient(ellipse at center top,
+        orange,   
+        transparent  
+    ),
+    radial-gradient(ellipse at center bottom,
+        red,   
+        transparent  
+    );
+}
+
