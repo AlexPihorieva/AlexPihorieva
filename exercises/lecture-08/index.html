@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/main.css">
+
+    <style>
+        /* 
+            1.Перепишіть властивості padding та margin за допомогою скороченого синтаксу
+       .box{ 
+		padding-top:    10px; 
+		padding-right:  20px; 
+		padding-bottom: 25px; 
+		padding-left:   20px;  
+
+		margin-top:    25px; 
+		margin-right:  20px; 
+		margin-bottom: 25px; 
+		margin-left:   20px;  
+
+       }*/
+
+        /* .box{
+        padding: 10px 20px 25px 20px;
+        margin: 25px 20px 25px 20px;
+    } */
+    </style>
+</head>
+
+
+<!-- 
+    2. Обчислити ширину елемента .box
+<body>
+   <div class="box"></div>
+</body>
+.box{ 
+  width: 300px; 
+  padding: 10px; 
+  border: dashed 2px green;
+}
+    
+</body> 
+
+    ВІДПОВІДЬ: 324px
+
+    3.Обчислити ширину і висоту елемента .first-box
+<body>
+   <div class="first-box"></div>
+</body>
+.first-box {
+  width: 200px;
+  height: 100px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+  
+}
+    Відповідь: ширина-256px, висота-156px
+
+
+    4.Обчислити ширину і висоту елемента .second-box
+<body>
+   <div class="second-box"></div>
+</body>
+.second-box {
+  width: 200px;
+  height: 100px;
+  border: 8px solid blue;
+  background: yellow;
+}
+    Відповідь: ширина-216px, висота-116px
+
+    5.Обчислити ширину елемента div
+div{
+  box-sizing:content-box;
+  width: 200px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+}
+    Відповідь: ширина-256px,
+
+    6.Обчислити ширину контенту елемента div
+div{
+  box-sizing:border-box;
+  width: 200px;
+  border: 8px solid blue;
+  padding: 20px;
+  background: yellow;
+}
+    Відповідь: ширина-144px
+-->
+
+<body>
+    <div class="first-box"></div>
+</body>
+
+<!-- 
+ <style>
+    div {
+      border: 10px dotted black;
+      padding: 15px;
+      background: lightblue;
+    }
+  </style>
+  </head>
+  <body>
+    <div id="example1">
+      <p>Правило для example1: фон всередині елемента має простягатися за межі рамки.</p>
+    </div>
+  
+    <div id="example2">
+      <p>Правило для example2: фон всередині елемента має простягатися до внутрішнього краю рамки.</p>
+    </div>
+  
+    <div id="example3">
+      <p>Правило для example3: фон всередині елемента має простягатися до краю поля вмісту.</p>
+    </div> -->
+
+
+<style>
+    .custom-background {
+        border: 10px dotted black;
+        padding: 15px;
+        background: lightblue;
+    }
+
+    #example1 {
+        background-clip: border-box;
+        /* фон всередині елемента має простягатися за межі рамки */
+    }
+
+    #example2 {
+        background-clip: padding-box;
+        /* фон всередині елемента має простягатися до внутрішнього краю рамки */
+    }
+
+    #example3 {
+        background-clip: content-box;
+        /* фон всередині елемента має простягатися до краю поля вмісту */
+    }
+</style>
+</head>
+
+<body>
+    <div class="custom-background" id="example1">
+        <p>Правило для example1: фон всередині елемента має простягатися за межі рамки.</p>
+    </div>
+
+    <div class="custom-background" id="example2">
+        <p>Правило для example2: фон всередині елемента має простягатися до внутрішнього краю рамки.</p>
+    </div>
+
+    <div class="custom-background" id="example3">
+        <p>Правило для example3: фон всередині елемента має простягатися до краю поля вмісту.</p>
+    </div>
+</body>
+
+
+<body>
+    <h1><span>Awesome article</span></h1>
+    <div class="box"></div>
+    <style>
+        h1 {
+            display: inline-block;
+            white-space: nowrap;
+            /* Забороняє перенесення тексту */
+        }
+
+        span {
+            display: block;
+            /* Робить текст блочним, щоб його можна було перенести на новий рядок */
+        }
+    </style>
+
+</html>
