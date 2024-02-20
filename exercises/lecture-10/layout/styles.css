@@ -1,0 +1,21 @@
+/* Налаштуйте елементи з класом card так, щоб вони пропорційно ділили між собою 
+весь доступний простір та мали базовий розмір, визначений змінною --min. */
+body {
+    --padding: 5vw;
+    --max-width: 180ch;
+  }
+  
+  .flexbox {
+    --min: 30ch;
+  
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 1rem;
+  }
+
+  .card {
+    flex: 0 1 var(--min);
+  }
+
+  
