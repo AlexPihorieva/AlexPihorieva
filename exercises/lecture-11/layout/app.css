@@ -1,0 +1,22 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+    
+}
+
+/* Створіть сітку з 3-х колонок.
+Налаштуйте grid-властивості так, щоб header займав 3 колонки, main - 2 колонки, footer - 3 колонки. */
+
+.header {
+    grid-column: 1 / span 3; 
+}
+
+.main {
+    grid-column: span 2; 
+}
+
+.footer {
+    grid-column: 1 / span 3;
+}
+
