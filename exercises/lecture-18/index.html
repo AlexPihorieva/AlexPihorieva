@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+	
+</head>
+<body>
+
+  <!-- - функція checkAge повертає true, якщо параметр age перевищує 18.
+  - в іншому випадку запитує підтвердження та повертає результат: -->
+    
+    <!-- <script>
+        function checkAge(age) {
+            if (age > 18) {
+                return true;
+            } 
+            
+            return confirm('Did parents allow you?');
+        }
+
+        alert(checkAge(17))
+
+        // Чи буде функція працювати інакше, якщо видалити else?   Ні функція працюватиме так само
+
+        // Чи є різниця в поведінці цих двох варіантів і чому?     Ні, в даному випадку else ні на що не впливає.
+
+    </script> -->
+
+    <!-- <script>
+
+        function checkAge(age) {
+            return age > 18 ? true : confirm('Did parents allow you?');
+        }
+
+        function checkAge(age) {
+            return age > 18 || confirm('Did parents allow you?');
+        }
+
+        // Чи потрібні дужки навколо age > 18    Дужки в даному випадку не обов'язкові
+
+        alert(checkAge(17))
+    </script> -->
+
+<!-- <script>
+
+    // function min(a, b) {
+    //     if (a < b) {
+    //         return a
+    //     }
+
+    //     return b
+    // }
+
+    function min(a, b) {
+        return a < b ? a : b
+    }
+
+       
+    console.log(
+        min(2, 5) == 2,
+        min(3, -1) == -1,
+        min(1, 1) == 1
+    )
+</script> -->
+
+<script>
+    function pow(x, n){
+
+        let xInt = parseInt(x);
+        let nInt = parseInt(n);
+
+        if (isNaN(xInt)){
+            alert("x is Not a Number");
+            return;
+        }
+
+        if (isNaN(nInt)){
+            alert("n is Not a Number");
+            return;
+        }
+
+        return xInt ** nInt
+    }
+
+
+    const x = prompt("Enter x: ");
+    const n = prompt("Enter power n: ");
+
+    alert(pow(x, n))
+
+   
+</script>
+
+
+<script>
+    function ask(question, yes, no) {
+        if (confirm(question)) yes();
+        else no();
+    }
+
+    (question, yes, no) => {
+        if (confirm(question)) yes();
+        else no();
+    }
+
+    let askFuncExpression = function(question, yes, no) {
+        if (confirm(question)) yes();
+        else no();
+    }
+
+
+
+</script>
+
+
+<script>
+    function A() { console.log('A was called'); return undefined;}
+    function B() { console.log('B was called'); return false;}
+    function C() { console.log('C was called'); return "foo";}
+
+
+    // A was called C was called foo
+    A(); C();
+
+    // B was called C was called foo
+    B() || C();
+
+
+</script>
+
+
+
+
+</body>
+</html>
