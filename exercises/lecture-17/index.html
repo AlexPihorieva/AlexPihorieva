@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+
+    <!-- <script>
+
+        let x = 3
+        let y = 4
+
+        console.log(x == 3);       // true, x дорівнює 3
+        console.log(x === "3");    // false, x - це число, а "3" - рядок
+        console.log(x != 5);       // true, x не дорівнює 5
+        console.log(x !== "5");    // true, x - це число, а "5" - рядок
+        console.log(x !== 3);      // false, x дорівнює 3
+        console.log(y > 5);        // false, y не більше 5
+        console.log(y >= 3);       // true, y більше або дорівнює 3
+        console.log(y < 5);        // true, y менше 5
+        console.log(y <= 2);       // false, y не менше або дорівнює 2
+        console.log(1 == true);    // true, 1 перетворюється в true при порівнянні за значенням
+        console.log(null == undefined);  // true, вони обидва не визначені
+        console.log(NaN == NaN);   // false, NaN завжди повертає false при порівнянні
+    </script> -->
+
+
+    <!-- Визначити результат наступних логічних виразів: -->
+    <!-- <script>
+        let x = 3;
+        let y = 4;
+        let z = 5;
+
+        x ||= y; // 3
+        x || (y = z); // 3
+        x &&= y; // 4
+        x && (y = z); // 5
+        x ??= y; // 3
+        x ?? (y = z); // 3
+    </script> -->
+
+
+    <!-- <script>
+        const numberToGuess = 3;
+        let input = prompt("Guess my number. Enter number: ");
+
+        console.log('Entered number', input);
+
+        inputNumber = parseInt(input);
+        if (isNaN(inputNumber)){
+            alert("It's not a number!")
+        } else {
+            if (inputNumber == numberToGuess){
+                alert("Congratulations, You did it!")
+            } else if (inputNumber < numberToGuess){
+                alert("The number is short")
+            } else {
+                alert("The number is too long")
+            }
+        }
+
+    </script> -->
+
+<!-- <script>
+    const inputDay = prompt("Enter day of the week: ");
+
+    const firstLetter = inputDay.charAt(0)
+    const firstLetterCap = firstLetter.toUpperCase()
+    const remainingLetters = inputDay.slice(1).toLocaleLowerCase()
+    const capitalizedInputDay = firstLetterCap + remainingLetters
+
+    switch (capitalizedInputDay) {
+        case 'Понеділок':
+        case 'Monday':
+            alert("Start of the work week!")
+        break;
+        case 'П\'ятниця':
+        case 'Friday':
+            alert("End of the work week!")
+        break;
+        default:
+            alert("A regular day")
+    }
+
+
+</script> -->
+
+
+<!-- <script>
+    const inputDay = prompt("Enter day of the week: ");
+
+    const firstLetter = inputDay.charAt(0)
+    const firstLetterCap = firstLetter.toUpperCase()
+    const remainingLetters = inputDay.slice(1).toLocaleLowerCase()
+    const capitalizedInputDay = firstLetterCap + remainingLetters
+
+    if ((capitalizedInputDay == 'Понеділок' || capitalizedInputDay == 'Monday')) {
+        alert("Start of the work week!")
+    } else if ((capitalizedInputDay == 'П\'ятниця' || capitalizedInputDay == 'Friday')){
+        alert("End of the work week!")
+    } else {
+        alert("A regular day")
+    }
+
+</script> -->
+
+<!-- <script>
+
+    const studentScore = prompt("Enter student score: ");
+
+    studentScoreNumber = parseInt(studentScore);
+    if (isNaN(studentScoreNumber)){
+        alert("It's not a number!")
+    } else {
+    
+        let grade = null;
+
+        if (studentScoreNumber < 50) {
+            grade = 'F'
+        } else if (studentScoreNumber < 70) {
+            grade = 'D'
+        } else if (studentScoreNumber < 80) {
+            grade = 'C'
+        } else if (studentScoreNumber < 90) {
+            grade = 'B'
+        } else {
+            grade = 'A'
+        }
+    
+        alert('Grade is ' + grade)
+    }
+
+</script> -->
+
+<!-- <script>
+
+    const studentScore = prompt("Enter student score: ");
+
+    studentScoreNumber = parseInt(studentScore);
+    if (isNaN(studentScoreNumber)){
+        alert("It's not a number!");
+    } else {
+    
+        let grade = studentScoreNumber < 50 ? 'F' :
+         studentScoreNumber < 70 ? 'D' : 
+         studentScoreNumber < 80 ? 'C' : 
+         studentScoreNumber < 90 ? 'B' : 'A';
+    
+        alert('Grade is ' + grade);
+    }
+
+</script> -->
+
+<script>
+    let firstName = null;
+    let lastName = undefined;
+    let username = (firstName || lastName) ?? "Guest";
+
+    console.log(username); // "Guest"
+</script>
+
+
+</body>
+
+</html>
+
+
