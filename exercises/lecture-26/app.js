@@ -54,11 +54,17 @@
 // // { name: "Wick", degree: 375, percentage: 62.5 } { name: "Malcolm", degree: 405, percentage: 67.5 } { name: "Smith", degree: 453, percentage: 75.5 }​
 
 
-// new_students_information = students_information.map((item, index, array)=> {
-//     return `{ name: ${item.name}, degree: ${item.degree},  percentage: ${item.degree / 600}}`
-// })
+// let new_students_information = students_information.map((student) => {
+//     return {
+//         name: student.name,
+//         degree: student.degree,
+//         percentage: (student.degree / 600) * 100
+//     };
+// });
 
-// console.log(new_students_information)
+// new_students_information.forEach((student) => {
+//     console.log(student);
+// });
 
 
 // // Маємо масив :

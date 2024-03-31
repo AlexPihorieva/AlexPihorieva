@@ -14,10 +14,10 @@
 
 
 
-const ul = document.querySelector('ul');
+const ul = document.querySelector('.to-do-list');
 
 let itemsArray = [];
-if (localStorage.items) { 
+if (localStorage.items === undefined) { 
     itemsArray = JSON.parse(localStorage.items); 
 } else { 
     localStorage.items = JSON.stringify(itemsArray); 
@@ -44,7 +44,7 @@ function add() {
 }
 
 function del() {
-    localStorage.items = '';
+    localStorage.removeItem('items');
     ul.innerHTML = '';
     input.value = '';
 }
