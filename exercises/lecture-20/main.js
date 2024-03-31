@@ -64,7 +64,7 @@
 
 // console.log(mary.introduceSelf())
 // console.log(tom.introduceSelf())
-// console.log('mary has "prop"', Object.hasOwn(mary, "prop"))
+// console.log('mary has "prop"', Object.hasOwnProperty(mary, "prop"))
 
 
 
