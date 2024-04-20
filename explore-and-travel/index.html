@@ -9,6 +9,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
         rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/flatpickr"></script>
+
+    <script src="main.js"></script>
+        
 </head>
 
 <body>
@@ -34,31 +40,36 @@
                     <div class="sep"></div>
                     <form class="search-form">
                         <div>
-                            <select>
-                                <option>Location1</option>
-                                <option>Location2</option>
-                                <option>Location3</option>
+                            <select name="location" id="locationSelect">
+                                <option>Europe</option>
+                                <option>USA</option>
+                                <option>India</option>
+                                <option>China</option>
+                                <option>Other</option>
                             </select>
-                            <select>
-                                <option>Activity1</option>
-                                <option>Activity2</option>
+                            <select name="activity" id="activitySelect">
+                                <option>Relax</option>
+                                <option>Sport</option>
+                                <option>Beach</option>
+                                <option>Excurtions</option>
                             </select>
                         </div>
                         <div>
-                            <select>
-                                <option>Grade1</option>
-                                <option>Grade2</option>
-                                <option>Grade3</option>
+                            <select name="grade" id="gradeSelect">
+                                <option>5</option>
+                                <option>4</option>
+                                <option>3</option>
                             </select>
-                            <select>
-                                <option>Date1</option>
-                                <option>Date2</option>
-                                <option>Date3</option>
-                                <option>Date4</option>
-                            </select>
+                            <input type="text" name="date" id="dateSelect" placeholder="Select Date">
                         </div>
                         <button class="button" type="submit">Explore</button>
                     </form>
+                    <div id="formErrorModal" class="modal">
+                        <div class="modal-content">
+                            <p>Oops, please make sure all fields are filled!</p>
+                            <p class="close">Close</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
@@ -159,13 +170,17 @@
                 </div>
             </div>
             <div class="testimonials-img">
-                <img src="images/image 6.png" />
+                <img  src="images/image 6.png" />
+                <img class="hidden" src="images/tr1.png" />
+                <img class="hidden" src="images/tr2.png" />
+                <img class="hidden" src="images/tr3.png" />
+                <img class="hidden" src="images/tr4.png" />
                 <div class="testimonials-img-controls">
-                    <a href="#">
+                    <a id="prev-img" href="#">
                         <img alt="previous" src="images/previous.png" />
                         <span></span>
                     </a>
-                    <a href="#">
+                    <a id="next-img" href="#">
                         <img alt="next" src="images/next.png" />
                         <span></span>
                     </a>
