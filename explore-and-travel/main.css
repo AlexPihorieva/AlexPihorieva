@@ -39,14 +39,22 @@ body {
     grid-auto-flow: column;
     gap: 1em;
     align-content: center;
+}
 
+.nav-links ul{
+    list-style: none;
+}
+
+.nav-links ul li{
+    float: left;
 }
 
 .nav-links a.menu-item {
     text-decoration: none;
     color: #B8BECD;
-    padding: 0.5em 1em;
+    margin: 0.5em 1em;
     border: 1px solid transparent;
+    transition: all 0.3s ease;
 }
 
 .nav-links a.active {
@@ -55,12 +63,12 @@ body {
 }
 
 .nav-links a.menu-item:hover {
-    font-weight: bold;
     color: #202336;
 }
 
 .button {
     width: 132px;
+    display: inline-block;
     text-align: center;
     border-radius: 8px;
     background-color: #FB8F1D;
@@ -68,17 +76,29 @@ body {
     border-color: #FB8F1D;
     text-decoration: none;
     padding: 0.5em 1em;
+    transition: all 0.3s ease;
+}
+
+.button-big{
+    height: 48px;
+    width: 164px;
+    padding: 1em;
+
 }
 
 .button:hover {
     font-weight: bold;
 }
 
-.transparent-button {
+.login-button {
     background-color: #fff;
     color: #FB8F1D;
     border: 1px solid #FB8F1D;
+    margin: -0.5em 0.5em -0.5em 1em;
+}
 
+.register-button {
+    margin: -0.5em 0em -0.5em 1em;
 }
 
 .main {
@@ -141,6 +161,18 @@ h1 {
     font-size: 15px;
     line-height: 213%;
     color: #4a4c53;
+    padding-left: 2em;
+
+}
+
+.search-form select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: transparent;
+    background-image: url("images/select-icon.svg");
+    background-repeat: no-repeat;
+    background-position-x: 11.5em;
+    background-position-y: 1.5em;
 }
 
 .search-form button[type="submit"] {
@@ -152,6 +184,7 @@ button[type="submit"] {
     font-family: 'Mulish', sans-serif;
     font-size: 17px;
     border-style: hidden;
+    padding: inherit;
 }
 
 button[type="submit"]:hover {
@@ -206,6 +239,11 @@ h2 {
     font-size: 17px;
     line-height: 353%;
     color: #fb8f1d;
+    transition: all 0.3s ease;
+}
+
+.features-destinations-header>a {
+    text-decoration: none;
 }
 
 .features-destinations-block {
@@ -363,6 +401,12 @@ h2 {
     font-size: 17px;
     line-height: 353%;
     color: #fb8f1d;
+    text-decoration: underline;
+    transition: all 0.3s ease;
+}
+
+.trending-stories-header>a:hover {
+    text-decoration: none;
 }
 
 .trending-stories-block {
@@ -409,6 +453,11 @@ h2 {
     font-size: 15px;
     line-height: 187%;
     color: #fb8f1d;
+    transition: all 0.3s ease;
+}
+
+.trending-stories-block-readmore a:hover {
+    text-decoration: underline;
 }
 
 .footer {
@@ -470,6 +519,14 @@ footer ul a{
     color: #000;
 }
 
+.footer-links a{
+    transition: all 0.3s ease;
+}
+
+.footer-links a:hover{
+    color: #000;
+}
+
 #footer-block-2 {
     margin-top: 80px;
     height: 84px;
@@ -492,6 +549,12 @@ footer ul a{
 
 #footer-block-2 i{
     font-size: x-large;
+    color: #000;    
+    transition: all 0.3s ease;
+}
+
+#footer-block-2 i:hover{
+    font-size: xx-large;
     color: #000;    
 }
 
@@ -600,7 +663,7 @@ footer ul a{
 .modal {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 10000;
     left: 0;
     top: 0;
     width: 100%;

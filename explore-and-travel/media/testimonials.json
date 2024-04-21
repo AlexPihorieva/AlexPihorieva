@@ -1,0 +1,37 @@
+[
+    {
+        "image": "images/image 6.png",
+        "stars": 5,
+        "title": "Founder Circle",
+        "desc": "“Quisque in lacus a urna fermentum euismod. Integer mi nibh, dapibus ac scelerisque eu, facilisis quis purus. Morbi blandit sit amet turpis nec”",
+        "author": "Edward Newgate"
+    },
+    {
+        "image": "images/tr1.png",
+        "stars": 4,
+        "title": "Pyramids group",
+        "desc": "McClintock, un profesor de Latin de la Universidad de Hampden-Sydney en Virginia",
+        "author": "Alex Green"
+    },
+    {
+        "image": "images/tr2.png",
+        "stars": 3,
+        "title": "Aliance foundation",
+        "desc": "Lorem Ipsum viene de las secciones 1.10.32 y 1.10.33 de 'de Finnibus Bonorum et Malorum'",
+        "author": "Jimmy Ott"
+    },
+    {
+        "image": "images/tr3.png",
+        "stars": 2,
+        "title": "Corp GTX",
+        "desc": "Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat",
+        "author": "Jhon Smith"
+    },
+    {
+        "image": "images/tr4.png",
+        "stars": 5,
+        "title": "Fine Grain",
+        "desc": "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur",
+        "author": "Bob Helms"
+    }
+]
