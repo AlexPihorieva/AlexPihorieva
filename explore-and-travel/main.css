@@ -242,7 +242,7 @@ h2 {
     transition: all 0.3s ease;
 }
 
-.features-destinations-header>a {
+.features-destinations-header>a:hover {
     text-decoration: none;
 }
 
