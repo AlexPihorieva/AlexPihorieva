@@ -175,6 +175,8 @@ h1 {
     background-repeat: no-repeat;
     background-position-x: 11.5em;
     background-position-y: 1.5em;
+    cursor: pointer;
+    outline: none;
 }
 
 .search-form button[type="submit"] {
@@ -248,6 +250,7 @@ h2 {
     line-height: 353%;
     color: #fb8f1d;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .features-destinations-header>a:hover {
@@ -411,6 +414,7 @@ h2 {
     color: #fb8f1d;
     text-decoration: underline;
     transition: all 0.3s ease;
+    white-space: nowrap;
 }
 
 .trending-stories-header>a:hover {
@@ -739,7 +743,7 @@ footer ul a{
 
     .search-form select, input {
         width: 100%;
-        background-position-x: 28em;
+        background-position-x: 95%;
     }
 
     .element{
@@ -790,7 +794,8 @@ footer ul a{
     }
 
     .section{
-        margin: 10px !important;
+        margin: 0 !important;
+        padding: 0 !important;
     }
 
     #footer-block-1 {
@@ -803,16 +808,31 @@ footer ul a{
         position: relative;
         left: 0px;
         width: 100%;
+        height: auto;
     }
 
     .thousand-02 img {
         position: relative;
         left: 0;
         width: 100%;
+        height: auto;
+
     }
 
-    .testimonials-img img {
+    .thousand-02-text {
+        padding-left: 0;
+    }
+    .testimonials-img > img {
         border-radius: 8px;
+        width: 100%;
+        height: auto;
+    }
+
+    .testimonials-img-controls {
+        border-radius: 16px 0 0 0;
+        position: static;
+        margin: 0 auto;
+        padding-left: 30px; 
     }
 
     .thousand-03 img{
@@ -830,6 +850,10 @@ footer ul a{
 
     .footer-links{
         text-align: center;
+    }
+
+    .search-form select, input {
+        margin-right: 0px;
     }
 
 }
